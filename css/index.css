@@ -6,6 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background-color: #D5EEFF;
 }
 
 .thumb {
@@ -42,4 +43,7 @@ color: #6FB7E9;
 }
 .seleccion-cat img:hover{
 	background: rgba(0,0,0,0.10);
+}
+.descripcion-gauss:hover{
+	text-decoration: underline;
 }
