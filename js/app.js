@@ -18,6 +18,21 @@ function cargarOptTipolugar(){
 	 eleOpcionesLugares.innerHTML = respuesta;
 }
 
+function cargarAreasProtegidas(){
+
+	$.ajax({
+		url: 'html/lugares/areasProtegidas.html',
+		type: 'GET',
+		beforeSend: function() {
+             $('#contenidoPrincipal').html('Cargando...');
+        },
+		success: function(data){
+			$('#contenidoPrincipal').html(data);
+		}
+	});
+
+}
+
 var app = {
 	init: function(){
 		 cargarOptActividades();
@@ -31,4 +46,7 @@ var app = {
 	   	 });
 	},
 };
+
+
+
 
