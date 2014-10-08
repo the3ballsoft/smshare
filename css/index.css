@@ -22,17 +22,20 @@ footer {
 
 /*Color del texto del menu */
 .navbar-inverse .navbar-nav>li>a {
-	color: #E9F2F9;
+	color: #A0D8FF;
 }
+/*Logo*/
+#logo{
 
+}
 /*Color del logo*/
 .navbar-inverse .navbar-brand {
 	color: #E9F2F9;
 }
 
-/*Colores verdes del header*/
+/*Colores del header*/
 .navbar-inverse .navbar-nav>li>a:hover {
-color: #6FB7E9;
+color: white;
 }
 .navbar-inverse {
 	background-color: #3C8DC5;
@@ -47,4 +50,8 @@ color: #6FB7E9;
 /*Toogle button del filtrado*/
 #filtroIndex{
 	font-size: 22px;
+}
+.menu-activo{
+	background-color: #3071a9;
+	color: white;
 }
