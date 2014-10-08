@@ -47,6 +47,11 @@ color: white;
 .descripcion-gauss:hover{
 	text-decoration: underline;
 }
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+  cursor: pointer;
+}
 /*Toogle button del filtrado*/
 #filtroIndex{
 	font-size: 22px;
@@ -257,3 +262,4 @@ color: white;
 .color-azul{
 	color: #2980b9;
 }
+
