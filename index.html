@@ -66,104 +66,28 @@
 
     <!-- Page Content -->
     <div class="container">
-
+       
         <div class="row">
             
             <div class="col-lg-12">
                 <h2 class="page-header">Disfruta lo mejor de Santa Marta con SMshare</h2>
 
             </div>
+            <div id="filtroIndex" class="col-lg-12">
+                Mostrar por 
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-primary btn-lg active">
+                    <input type="radio" name="options" id="opt_actividades" onclick="cargarOptActividades()" checked> Actividades
+                  </label>
+                  <label class="btn btn-primary btn-lg">
+                    <input type="radio" name="options" id="opt_tipolugar" onclick="cargarOpttipolugar()"> Tipo de lugar
+                  </label>
+                </div>
+                <br><br>
+            </div>
+            <div id="opcionesLugares">
             
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="images/tierrasprotegidas.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-shield fa-4x"></i><br><br><h5>Areas protegidas</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/avistamientoaves.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-binoculars fa-4x"></i><br><br><h5>Avistamiento de aves</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/buceo.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-anchor fa-4x"></i><br><br><h5>Buceo</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/vallesmontanas.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-flag fa-4x"></i><br><br><h5>Valles y montañas</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/aguascontinentales.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-support fa-4x"></i><br><br><h5>Aguas continentales</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/playasvirgenes.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-sun-o fa-4x"></i><br><br><h5>Playas virgenes</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/etnoturismo.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-group fa-4x"></i><br><br><h5>Etnoturismo</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/ecoturismo.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-leaf fa-4x"></i><br><br><h5>Ecoturismo</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/actividadesextremas.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-code fa-4x"></i><br><br><h5>Actividades extremas</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a class="thumbnail seleccion-cat" href="#">
-                    <img class="img-responsive" src="images/ocio.jpg" alt="">
-                    <div class="carousel-caption descripcion-gauss">
-                       <i class="fa fa-glass fa-4x"></i><br><br><h5>Ocio</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
+           </div>
         </div>
 
         <hr>
@@ -185,6 +109,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- aplicacion -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+      app.init();
+    </script>
 
 </body>
 

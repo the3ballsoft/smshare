@@ -6,7 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background-color: #D5EEFF;
+    background-color: #EAF7FF;
 }
 
 .thumb {
@@ -24,10 +24,7 @@ footer {
 .navbar-inverse .navbar-nav>li>a {
 	color: #E9F2F9;
 }
-/*Logo*/
-#logo{
 
-}
 /*Color del logo*/
 .navbar-inverse .navbar-brand {
 	color: #E9F2F9;
@@ -46,4 +43,8 @@ color: #6FB7E9;
 }
 .descripcion-gauss:hover{
 	text-decoration: underline;
+}
+/*Toogle button del filtrado*/
+#filtroIndex{
+	font-size: 22px;
 }
