@@ -23,11 +23,15 @@ footer {
 .navbar-inverse .navbar-nav>li>a {
 	color: #E9F2F9;
 }
-
+/*Logo*/
+#logo{
+	
+}
 /*Color del logo*/
 .navbar-inverse .navbar-brand {
 	color: #E9F2F9;
 }
+
 /*Colores verdes del header*/
 .navbar-inverse .navbar-nav>li>a:hover {
 color: #6FB7E9;
