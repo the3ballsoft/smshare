@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://acesubido-themes.herokuapp.com/clearForms -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login3.css" type="text/css">
+        <link rel="stylesheet" href="css/login2.css" type="text/css">
+        <link rel="stylesheet" href="css/login1.css" type="text/css">
+        
+
+    <!-- Custom CSS -->
+   
+     <!-- iconos -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <style type="text/css">   
+       #bg{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+
+}
+            .row {
+                padding: 80px 0px;
+            }   
+            .row + .row {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }           
+        </style>
+    <style type="text/css"></style></head>
+    <body>
+       <!-- Navigation -->
+  
+
+        <img id="bg" src="images/background.jpg"  alt="background" />  
+   <!-- Navigation -->
+
+    <div class="block blur2">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="clear-form two-col">
+                        <div class="form-heading">
+                            <h3 class="header">Ingresar</h3>
+                           
+                        </div>
+                        <div class="col1">                            
+                            <h4>Puedes usar otras cuentas </h4>
+                            <p>
+                              Para iniciar sesion puedes usar tus cuentas de facebook, twitter, o google
+                            </p>
+                            <a href="#" class="btn btn-large btn-block btn-fb">Ingresar con Facebook</a>
+                            <a href="#" class="btn btn-large btn-block btn-google">Ingresar con Google</a>
+                            <a href="#" class="btn btn-large btn-blue btn-block">Ingresar con Twiter</a>
+                        </div>
+                        <div class="col2">
+                            <div class="form-heading">
+                                <h4 >Usa tu cuenta </h4>                                                        
+                            </div>  
+                            <div class="form-body">                              
+                                <div class="pair-group">
+                                    <input type="text" class="input-block-level" placeholder="Nombre de Usuario">
+                                    <input type="password" class="input-block-level" placeholder="Contraseña">         
+                                </div>
+                           </div>                                 
+                            <div class="form-footer">     
+                               <a href="misservicios.html" class="btn btn-large btn-google btn-block" >Ingresar</a> 
+                                <p class="center">
+                                    <a href="registro.html">Deseas registrarte? es gratis !</a>
+                                </p>
+                            </div>    
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+        
+    <script type="text/javascript">
+window.onload = function() {
+ 
+    function bgadj(){
+             
+        var element = document.getElementById("bg");
+         
+        var ratio =  element.width / element.height;   
+         
+        if ((window.innerWidth / window.innerHeight) < ratio){
+         
+            element.style.width = '100%';
+            element.style.height = '100%';
+             
+            <!-- si la imagen es mas ancha que la ventana la centro -->
+            if (element.width > window.innerWidth){
+             
+                var ajuste = (window.innerWidth - element.width)/2;
+                 
+                element.style.left = ajuste+'px';
+             
+            }
+         
+        }
+        else{  
+         
+            element.style.width = '100%';
+            element.style.height = '100%';
+            element.style.left = '0';
+ 
+        }
+         
+    }
+<!-- llamo a la función bgadj() por primera vez al terminar de cargar la página -->
+    bgadj();
+    <!-- vuelvo a llamar a la función  bgadj() al redimensionar la ventana -->
+    window.onresize = function() {
+        bgadj();
+ 
+    }
+ 
+}
+    </script>
+
+</body></html>

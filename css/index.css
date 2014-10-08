@@ -6,7 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background-color: #D5EEFF;
+    background-color: #EAF7FF;
 }
 
 .thumb {
@@ -22,7 +22,7 @@ footer {
 
 /*Color del texto del menu */
 .navbar-inverse .navbar-nav>li>a {
-	color: #E9F2F9;
+	color: #A0D8FF;
 }
 /*Logo*/
 #logo{
@@ -33,9 +33,9 @@ footer {
 	color: #E9F2F9;
 }
 
-/*Colores verdes del header*/
+/*Colores del header*/
 .navbar-inverse .navbar-nav>li>a:hover {
-color: #6FB7E9;
+color: white;
 }
 .navbar-inverse {
 	background-color: #3C8DC5;
@@ -51,4 +51,12 @@ color: #6FB7E9;
   line-height:32px;
   font-size:1.25em;
   cursor: pointer;
+}
+/*Toogle button del filtrado*/
+#filtroIndex{
+	font-size: 22px;
+}
+.menu-activo{
+	background-color: #3071a9;
+	color: white;
 }
