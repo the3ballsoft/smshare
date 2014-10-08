@@ -1,0 +1,38 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+.color-blanco:{
+	color: white;
+}
+
+/*Color del texto del menu */
+.navbar-inverse .navbar-nav>li>a {
+	color: #E9F2F9;
+}
+
+/*Color del logo*/
+.navbar-inverse .navbar-brand {
+	color: #E9F2F9;
+}
+/*Colores verdes del header*/
+.navbar-inverse .navbar-nav>li>a:hover {
+color: #6FB7E9;
+}
+.navbar-inverse {
+	background-color: #3C8DC5;
+	border-color: #080808;
+}
