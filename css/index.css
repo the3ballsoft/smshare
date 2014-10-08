@@ -25,7 +25,7 @@ footer {
 }
 /*Logo*/
 #logo{
-	
+
 }
 /*Color del logo*/
 .navbar-inverse .navbar-brand {
@@ -39,4 +39,7 @@ color: #6FB7E9;
 .navbar-inverse {
 	background-color: #3C8DC5;
 	border-color: #080808;
+}
+.seleccion-cat img:hover{
+	background: rgba(0,0,0,0.10);
 }
