@@ -74,12 +74,19 @@
 
         <div class="row">
             <div id="mygallery" >
-              <a href="#">
+              <a href="javascript:lanzarModal()">
                 <img alt="happy" src="images/share/1.jpg"/>
                 <div class="caption">
                     Vacaciones en santa marta 
                     <strong>Rodadero</strong>
-                    <span class="on_img" align="left">20</span>
+                    <div class="star-rating"> 
+                      <span class="fa fa-star" data-rating="1"></span>
+                      <span class="fa fa-star" data-rating="2"></span>
+                      <span class="fa fa-star-half-o " data-rating="3"></span>
+                      <span class="fa fa-star-o" data-rating="4"></span>
+                      <span class="fa fa-star-o" data-rating="5"></span>
+                      <input type="hidden" name="whatever" class="rating-value" value="3">
+                    </div>
                 </div>
               </a>
               <a href="#">
@@ -260,36 +267,97 @@
                 $('#mygallery').justifiedGallery('norewind'); //callback
             }
         });
-        
-            $("span.on_img").mouseover(function (){
-                $(this).addClass("over_img");
-            });
 
-            $("span.on_img").mouseout(function (){
-                $(this).removeClass("over_img");
-            });
-            $(".love").click(function(){
-                var id = $(this).attr("id");
-                //var dataString = 'id='+ id ;
-                var parent = $(this);
-                // $(this).fadeOut(300);
-                // $.ajax({
-                //     type: "POST",
-                //     url: "ajax_love.php",
-                //     data: dataString,
-                //     cache: false,
-                //     success: function(html)
-                //     {
-                //     parent.html(html);
-                //     parent.fadeIn(300);
-                //     }
-                // });
-            return false;
-            });
-        
-
+        function lanzarModal(){
+            $('#myModal').modal();
+        }
     </script>
 
 </body>
 
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+        <h4 class="modal-title" id="myModalLabel">Vacaciones en la samaria</h4>
+      </div>
+      <div class="modal-body">
+        <div class=".col-xs-12 .col-sm-6 .col-md-8">
+            <img alt="happy" src="images/share/1.jpg" style="width: 100%" />
+        </div>        
+        <div class=".col-xs-6 .col-md-4">
+        <br>
+        Comparte con tus amigos
+                <div class="" align="right">
+                     <a class="social-network facebook" title="facebook"></a>
+                     <a class="social-network flickr" title="flickr"></a>
+                     <a class="social-network gplus" title="gplus"></a>
+                     <a class="social-network instagram" title="instagram"></a>
+                     <a class="social-network tumblr" title="tumblr"></a>
+                     <a class="social-network twitter" title="twitter"></a>      
+                </div>
+
+            <h3>Playa Blanca</h3>
+            <strong>Santa Marta</strong>
+            
+            <br>
+            <br>
+            <div class="well">
+                    <h4>Deja un comentario:</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+
+            <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Estas jopeable
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        bla bla, trancua tongeo
+                    </div>
+                </div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Start Bootstrap
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <!-- Nested Comment -->
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="http://placehold.it/64x64" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nested Start Bootstrap
+                                    <small>August 25, 2014 at 9:30 PM</small>
+                                </h4>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                        <!-- End Nested Comment -->
+                    </div>
+                </div>
+
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+      </div>
+    </div>
+  </div>
+</div>
